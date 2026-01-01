@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Speaker Manager">
+        <div class="slds-grid slds-wrap slds-gutters">
+            <div class="slds-col slds-size_1-of-2">
+                <c-speakersearch
+                    onspeakerselected={handleSpeakerSelected}>
+                </c-speakersearch>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <c-booksession
+                    selected-speaker={selectedSpeaker}>
+                </c-booksession>
+            </div>
+        </div>
+    </lightning-card>
+</template>
