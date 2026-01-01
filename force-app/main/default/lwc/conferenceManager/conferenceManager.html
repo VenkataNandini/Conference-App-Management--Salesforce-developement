@@ -1,0 +1,7 @@
+<template>
+    <c-speakersearch onspeakerselect={handleSpeakerSelect}></c-speakersearch>
+
+    <template if:true={selectedSpeakerId}>
+        <c-speakersessions speaker-id={selectedSpeakerId}></c-speakersessions>
+    </template>
+</template>
